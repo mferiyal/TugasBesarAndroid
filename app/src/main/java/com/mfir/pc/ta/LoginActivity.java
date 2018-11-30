@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.mfir.pc.ta.admin.DosenHome;
+
 public class LoginActivity extends AppCompatActivity {
     Button btnMasuk;
     @Override
@@ -16,8 +18,8 @@ public class LoginActivity extends AppCompatActivity {
         btnMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent i = new Intent(getApplicationContext(),AdminHome.class);
-//                startActivity(i);
+                Intent i = new Intent(getApplicationContext(),DosenHome.class);
+                startActivity(i);
             }
         });
     }
