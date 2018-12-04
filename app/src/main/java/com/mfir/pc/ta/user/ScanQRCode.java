@@ -1,9 +1,11 @@
-package com.mfir.pc.ta;
+package com.mfir.pc.ta.user;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.util.Log;
+
+import com.mfir.pc.ta.R;
 /*import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;*/

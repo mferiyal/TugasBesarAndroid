@@ -24,18 +24,6 @@
             android:scaleType="fitCenter"
             app:srcCompat="@mipmap/ic_launcher" />
 
-        <Button
-            android:id="@+id/ButtonDaftarDiLogin"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="27dp"
-            android:background="@android:color/transparent"
-            android:text="Daftar"
-            android:textAllCaps="false"
-            android:textColor="#1DA1F2" />
-
 
     </RelativeLayout>
 
@@ -57,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ponsel, email, atau nama pengguna" />
+            android:text="Nim / Nip" />
 
         <EditText
             android:id="@+id/editLoginEmail"
