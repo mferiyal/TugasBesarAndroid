@@ -21,8 +21,7 @@ public class MainFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final Activity activity = getActivity();
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         CodeScannerView scannerView = root.findViewById(R.id.scanner_view);
