@@ -3,8 +3,7 @@
     package="com.mfir.pc.ta">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-feature android:name="android.hardware.camera" />
 
     <application
@@ -23,8 +22,7 @@
         </activity>
         <activity android:name=".admin.Barcode" />
         <activity android:name=".user.ScanQRCode" />
-        <activity android:name=".admin.DosenHome" />
-        <activity android:name=".user.HomeMahasiswa"></activity>
+        <activity android:name=".admin.DosenHome"></activity>
     </application>
 
 </manifest>
