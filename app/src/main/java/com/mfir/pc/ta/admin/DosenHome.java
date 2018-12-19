@@ -11,5 +11,9 @@ public class DosenHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dosen_home);
+        initRv();
+    }
+    private void initRv(){
+
     }
 }

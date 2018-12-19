@@ -10,10 +10,10 @@ import retrofit2.http.PUT;
 
 public interface ApiInterface {
     //    Login
-    @FormUrlEncoded
-    @POST("Login")
-    Call<PostPutDelMhs> getLogin(@Field("nim") String nim,
-                                       @Field("password") String password);
+//    @FormUrlEncoded
+//    @POST("Login")
+//    Call<PostPutDelMhs> getLogin(@Field("nim") String nim,
+//                                       @Field("password") String password);
 
 
 }
