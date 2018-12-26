@@ -24,6 +24,11 @@ public class DosenHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dosen_home);
 
+        initRv();
+    }
+    private void initRv(){
+
+
 //        mContext = getApplicationContext();
 //        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 //        mLayoutManager = new LinearLayoutManager(mContext);
