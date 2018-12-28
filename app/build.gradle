@@ -30,5 +30,6 @@ dependencies {
     implementation 'com.budiyev.android:code-scanner:2.0.1'
     implementation 'com.squareup.retrofit2:retrofit:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'info.vividcode.android.zxing:capture-activity:2.3.0-1.+'
 
 }
