@@ -1,24 +1,37 @@
 package com.mfir.pc.ta.admin;
 
+
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
-import com.budiyev.android.codescanner.CodeScanner;
-import com.budiyev.android.codescanner.CodeScannerView;
-import com.budiyev.android.codescanner.DecodeCallback;
-import com.google.zxing.Result;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.mfir.pc.ta.R;
 
 import androidx.annotation.NonNull;
 
 public class Barcode extends AppCompatActivity {
-    private CodeScanner mCodeScanner;
+    public EditText teks;
+    public Button barcode;
+    public ImageView image;
+    MultiFormatWriter multiFormatWriter;
+    String teksbarcode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_barcode);
+        teks = (EditText)findViewById(R.id.edittext);
+        barcode = (Button)findViewById(R.id.barcodeteks);
+        image = (ImageView)findViewById(R.id.imageview);
 //        setContentView(R.layout.activity_barcode);
 //        CodeScannerView scannerView = findViewById(R.id.scanner_view);
 //        mCodeScanner = new CodeScanner(this, scannerView);
@@ -45,10 +58,24 @@ public class Barcode extends AppCompatActivity {
         super.onResume();
         mCodeScanner.startPreview();
     }
+        multiFormatWriter = new MultiFormatWriter();
 
-    @Override
-    protected void onPause() {
-        mCodeScanner.releaseResources();
-        super.onPause();
+
+
+        barcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                teksbarcode = teks.getText().toString();
+                try                {
+                    BitMatrix bitMatrix = multiFormatWriter.encode(teksbarcode, BarcodeFormat.QR_CODE, 300,300);
+                    BarcodeEncoder encoder = new BarcodeEncoder();
+                    Bitmap bitmap = encoder.createBitmap(bitMatrix);
+                    image.setImageBitmap(bitmap);
+
+                } catch (WriterException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }
