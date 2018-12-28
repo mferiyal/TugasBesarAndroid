@@ -10,10 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.mfir.pc.ta.Model.Jadwal;
-/*
 import com.mfir.pc.ta.dosen.detail_jadwal;
-*/
-import com.mfir.pc.ta.*;
+import com.mfir.pc.ta.dosen.R;
 
 
 import java.util.List;
