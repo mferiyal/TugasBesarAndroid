@@ -9,8 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.mfir.pc.ta.Model.DetailJadwal;
-import com.mfir.pc.ta.R;
 import com.mfir.pc.ta.*;
+import com.mfir.pc.ta.*;
+
 import java.util.List;
 
 /**
