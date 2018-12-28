@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E5F1FB"
-    tools:context="com.example.msi.absenta.user.dosen.home_dosen">
+    tools:context="com.mfir.pc.ta.dosen.home_dosen">
 
     <RelativeLayout
         android:id="@+id/top"
