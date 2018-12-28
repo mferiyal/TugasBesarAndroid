@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -14,17 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".user.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".admin.Barcode" />
-        <activity android:name=".user.ScanQRCode" />
-        <activity android:name=".admin.DosenHome" />
-        <activity android:name=".user.HomeMahasiswa"></activity>
+        <activity android:name=".dosen.home_dosen" />
+        <activity android:name=".user.home_mahasiswa" />
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode" />
+
     </application>
 
 </manifest>
